@@ -1,0 +1,148 @@
+@charset  "utf-8";
+@import "commonality";
+
+
+body{
+    background-color: #f5f5f5;
+    height: 100%;
+}
+/*.box{
+    background-color: #fff;
+    width: 854px;
+    margin: 0 auto 20px;
+    // position: relative;
+    min-height: 620px;
+    .logo{
+        padding: 50px 0 22px;
+        text-align: center;
+    }
+    .site-info{
+        padding-top: 100px;
+    }
+    .register{
+        .userReg{
+            width: 358px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+    }
+} */
+/* 登录页面  */
+
+.wrapper {
+	width:100%;
+	min-height:100%;
+	height:auto;
+	display:-webkit-box;
+	display:box;
+	display:-moz-box;
+	display:-o-box;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-o-box-align:center;
+	box-align:center;
+	-webkit-box-pack:center;
+	-moz-box-pack:center;
+	-o-box-pack:center;
+	box-pack:center
+}
+.wrap {
+	padding-bottom:80px;
+    padding-top:100px \9
+    
+}
+@media screen and (min-width:0\0) {
+    .wrap {
+        padding-top:100px
+    }
+}
+.layout {
+	background-color:#fff;
+	width:854px;
+	margin:0 auto 20px;
+	position:relative;
+	min-height:620px;
+}
+
+
+
+.lgn_inputbg{
+    position: relative;
+}
+.c_b{
+    zoom: 1;
+}
+
+
+
+/*  footer 底部  */
+.n-footer {
+	height:80px;
+	margin-top:-80px;
+	line-height:1.5;
+	text-align:center
+}
+.izl-rmenu {
+	position:fixed;
+	right:40px;
+	bottom:10px;
+	padding-bottom:73px;
+    z-index:999;
+    .btn {
+        width:72px;
+        height:73px;
+        margin-bottom:1px;
+        cursor:pointer;
+        position:relative;
+    }
+    a.btn-qq {
+        background:url(../registerImg/r_qq.png) 0px 0px no-repeat;
+        background-color:#fbb01f;
+        text-decoration:none;
+        display: block;
+        
+    }
+    .btn-qq:hover {
+        background-color:#c73339;
+    }
+    .btn-qq {
+        background:url(../registerImg/r_qq.png) 0px 0px no-repeat;
+        background-color:#fbb01f;
+    }
+    .btn-phone:hover {
+        background-color:#c73339
+    }
+    .btn-phone:hover .phone{
+        display: block;
+        transition: all 1s;
+        opacity: 1;
+    }
+    .btn-phone {
+        background:url(../registerImg/r_phone.png) 0px 0px no-repeat;
+        background-color:#d71921;
+        .phone {
+            background-color:#c73339;
+            position:absolute;
+            width:160px;
+            left:-160px;
+            top:0px;
+            line-height:73px;
+            color:#FFF;
+            font-size:18px;
+            text-align:center;
+            display:none;
+            opacity: 0;
+        }
+    }
+    .btn-top:hover {
+        background-color:#444;
+    }
+    .btn-top {
+        background:url(../registerImg/r_top.png) 0px 0px no-repeat;
+        background-color:#666;
+        display:none;
+        
+    }
+    
+}
+
