@@ -14,7 +14,7 @@
     <div class="headerLeft">
         <p>你好,欢迎来到安踏官方商城 !</p>
         <div class="enter">
-            <a href="##"> 请登录</a>
+            <a href="home.html"> 请登录</a>
             <a href="##">免费注册</a>
         </div>
         <div class="headerRight">
@@ -80,7 +80,7 @@
             <table class="w_Table">
                 <thead>
                     <tr>
-                        <td width="50"><input type="checkbox"></td>
+                        <td width="50"><input type="checkbox" id="checkallid"></td>
                         <td width="80">商品编号</td>
                         <td width="120">商品图片</td>
                         <td style="text-align:left">商品信息</td>
@@ -93,7 +93,7 @@
                 <tbody>
                     <!-- 主商品 -->
                     <tr class="shop">
-                        <td class="ridioButton" align="center"><input type="checkbox"></td>
+                        <td class="ridioButton" align="center" id="box"><input type="checkbox"></td>
                         <td class="serialNumber">95918773</td>
                         <td class="commodity"><img src="registerImg/xz.jpg"></td>
                         <td class="message">
@@ -102,14 +102,13 @@
                             </h2>
                                 <span>颜色:A14066经典红 尺码:2XL</span>
                         </td>
-                        <td class="price"><span style="text-decoration: line-through;">&yen;360.00</span><span>&yen;259.00</span></td>
+                        <td class="price"><span class="priceTop" style="text-decoration: line-through;">360.00</span><span class="priceButton">259.00</span></td>
                         <td class="quantity">
                             <div class="direction">
                                 <a class="minus">-</a>
                                 <input type="text" value="1">
                                 <a class="add">+</a>
                             </div>
-                            
                         </td>
                         <!-- <td class="p-inventory">777</td> -->
                         <td class="delete"><a >删除</a></td>
@@ -134,20 +133,20 @@
                         </td>
                         <td colspan="6" class="closeRight">
                             <p>
-                                <label title="">满499减40</label>
+                                <label title="满499减40">满499减40</label>
                                 <span>-¥40.00</span>
                             </p>
                             <p>
-                                <label title="">鞋服满200包邮</label>
+                                <label title="鞋服满200包邮">鞋服满200包邮</label>
                                 <span>+¥0.00</span>
                             </p>
                             <p id="jifen" style="display:none">
-                                <label title="">满499减40</label>
-                                <span>¥</span>
+                                <label title="">可获得积分</label>
+                                <span>2287</span>
                             </p>
-                            <p>
-                                <label for="">应付金额</label>
-                                <span>¥1118</span>
+                            <p class="four">
+                                <label for="应付金额">应付金额</label>
+                                <span class="payable">¥1118</span>
                             </p>
                         </td>
                     </tr>
@@ -160,9 +159,7 @@
                 </tbody>
             </table> 
         </div>
-        
     </div>
-       
 </div>
 
 
@@ -233,3 +230,4 @@
 </body>
 </html>
 <script src="js/jquery2.1.4.min.js"></script>
+<script src="js/shoppingCar.js"></script>

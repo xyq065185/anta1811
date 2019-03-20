@@ -1,4 +1,4 @@
-
+/*
 $(function(){
     var show_num = [];
     draw(show_num);
@@ -71,7 +71,7 @@ function draw(show_num) {
         context.lineTo(x + 1, y + 1);
         context.stroke();
     }
-}
+} 
 
 //得到随机的颜色值
 function randomColor() {
@@ -80,3 +80,21 @@ function randomColor() {
     var b = Math.floor(Math.random() * 256);
     return "rgb(" + r + "," + g + "," + b + ")";
 }
+*/
+
+$("#submit_button").click(function(){
+	$.post(
+		"index.php",
+		{"username":$("#user").val()},
+		function(data){
+			 // alert("Data Loaded: " + data);
+			if(data=="1"){
+                alert("恭喜您,注册成功,即将跳转到首页");
+                location.href="home.html";
+			}
+			else{
+				alert("注册失败");
+			}
+		}
+	);
+});
